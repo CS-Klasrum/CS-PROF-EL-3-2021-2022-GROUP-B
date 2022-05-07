@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/djo6hqejl/image/upload/v1649136235/PngItem_1447082_cqtl6s.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+
+            <img src="https://res.cloudinary.com/djo6hqejl/image/upload/v1649136235/PngItem_1447082_cqtl6s.png">
+
+            <h1>TARA.</h1>
+            <p>Teamwork's Always Results Accomplishments.</p>
+
+            <form action="main.html">
+                <div class="form">
+                    <label for="username">Guest Username & Room</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
+
+                    <input name="room" id="room" placeholder="Enter Room...">
+
+
+                </div>
+                <div class="flex">
+                    <button type="submit" class="btn btn-primary mb-2">Join Chat</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+</body>
+
+</html>
